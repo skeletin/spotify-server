@@ -26,10 +26,10 @@ class SpotifyClient
       state: state,
     })
 
-    return {
-             redirect_to: "https://accounts.spotify.com/authorize?#{query_params}",
-             cookies: cookies,
-           }
+    {
+      redirect_to: "https://accounts.spotify.com/authorize?#{query_params}",
+      cookies: cookies,
+    }
   end
 
   def callback(params)
